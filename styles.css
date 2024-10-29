@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DynaPuff:wght@400..700&family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content:space-between;
+    padding-top: 2rem;
+    padding-inline: 8rem;
+    background-color: rgb(198, 198, 221);
+
+
+}
+a {
+    color: blue; /* Color de texto inicial */
+    text-decoration: none; /* Quitar subrayado */
+  }
+  
+.titulo{
+    font-family: "Alfa Slab One", serif; 
+    font-size:6rem;
+}
+.page-nav {
+    border: 1px  solid black;
+}
+.page-content {
+    border: 1px solid red;
+}
+.header_right{
+    justify-content:space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+    gap: 10rem;
+
+}
+.header_right .menu{
+    font-family: "Alfa Slab One", serif; 
+    font-size:1rem;
+    list-style: none;
+    display:flex; 
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero_main{
+    display:flex;
+    
+
+}
+.hero_main > div{
+    flex: 1; 
+}
+.hero_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+.hero_text h4{
+    font-family: "DynaPuff", system-ui;
+    font-size:2rem;
+    font-weight: 300;  
+
+}
+.hero_text h2{
+    font-family: "Alfa Slab One", serif;
+    font-size:2rem;
+    font-weight: 300;  
+}
+.hero_imagen{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.hero_imagen img{
+ 
+    width: 95%;
+    border-radius: 1rem;
+}
+/***** grid ****/
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "item1 item2"
+        "item1 item3";
+    gap: 1rem;
+}
+.grid_item_1{
+    grid-area: item1;
+    background-image: url("../proyectocurso/camisas/7.png");
+    background-size: cover; /* Ajusta la imagen para que cubra toda la casilla */
+    background-position: center center;
+    height: 520px;
+    border-radius: 1rem;
+
+}
+.grid_item_1 h5{
+    font-family: "Alfa Slab One", serif; 
+    font-size: 2rem;
+}
+.grid_item_2{
+    grid-area: item2;
+    background-image: url("../proyectocurso/camisas/6.png");
+    background-size: cover; /* Ajusta la imagen para que cubra toda la casilla */
+    background-position:initial center;
+    height: 250px;
+    border-radius: 1rem;
+}
+.grid_item_2 h5{
+    font-family: "Alfa Slab One", serif; 
+    font-size: 2rem;
+}
+.grid_item_3{
+    grid-area: item3;
+    background-image: url("../proyectocurso/camisas/8.png");
+    background-size: cover; /* Ajusta la imagen para que cubra toda la casilla */
+    background-position: center center;
+    height: 250px;
+    border-radius: 1rem;
+}
+.grid_item_3 h5{
+    font-family: "Alfa Slab One", serif; 
+    font-size: 2rem;
+}
+
+/**** enjoy*****/
+
+.enjoy{
+    padding: 2rem;
+    padding-top: 0;
+}
+.title{
+    text-align: center;
+}
+.title h2{
+    font-family: "DynaPuff", system-ui;
+    display: inline-block;
+    position: relative;
+
+}
+
+.title h2::before{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.35cm;
+    left:-140px;
+}
+.title h2::after{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.35cm;
+    left:410px;
+}
+.title h5{
+    text-align: center;
+    padding: 2rem;
+    font-family: "DynaPuff", system-ui;
+    font-size:2rem;
+}
+
+.cards{
+    display: flex;
+    
+}
+.card{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 234, 234);
+    
+}
+
+.card img{
+    max-width: 50%;
+}
+.title2 h5{
+    text-align: center;
+    padding: 2rem;
+    font-family: "DynaPuff", system-ui;
+    font-size:2rem;
+}
+
+.cards1{
+    padding: 2rem;
+    display: flex; 
+}
+
+.title3 h5{
+    text-align: center;
+    padding: 2rem;
+    font-family: "DynaPuff", system-ui;
+    font-size:2rem;
+}
+.cards2{
+    padding: 2rem;
+    display: flex; 
+}
+/*** footer **/
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 0;
+
+}
+.footer_top{
+
+    background-color: rgb(198, 198, 221);
+    padding: 2rem;
+    
+
+}
+.footer_top h2{
+    font-family: "Alfa Slab One", serif; 
+    color:rgb(88, 106, 170);
+
+}
+.footer_top p{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(88, 106, 170);
+}
+
+
